@@ -1,0 +1,46 @@
+[	
+	{
+		"fips": 8001,
+		"state": "CO",
+		"area_name": "Patrick",
+		"bachelorsOrHigher": "US566 - Fetch Record"
+	},
+	{
+		"fips": 8003,
+		"state": "CO",
+		"area_name": "Vijaya",
+		"bachelorsOrHigher": "US312 - QA Tasks"
+	},
+	{
+		"fips": 8005,
+		"state": "CO",
+		"area_name": "Arthi",
+		"bachelorsOrHigher": "US345 - Create Services"
+	},
+	
+	{
+		"fips": 12133,
+		"state": "FL",
+		"area_name": "Puneesh",
+		"bachelorsOrHigher": "US582 - Setup IAM accounts"
+	},
+	{
+		"fips": 19001,
+		"state": "IA",
+		"area_name": "Ben",
+		"bachelorsOrHigher": "US534 - Frontend Components"
+	},
+	
+	{
+		"fips": 27001,
+		"state": "MN",
+		"area_name": "Amy",
+		"bachelorsOrHigher": "US5232 - Story grooming and refinements"
+	},
+	{
+		"fips": 48001,
+		"state": "TX",
+		"area_name": "John",
+		"bachelorsOrHigher": "US5121 - Architecture Design"
+	},
+]
