@@ -19,7 +19,7 @@ html, body {
     margin: 20px auto 0 auto;
     min-width: 95vw;
     text-align: center;
-    background: linear-gradient(to bottom right, rgba(11, 112, 129, 0.79), #11111150);
+    background: linear-gradient(to bottom right, rgba(11, 112, 129, 0.79), #4d3284);
     box-shadow: 5px 5px 15px black;
     border-radius: 3px;
     margin-bottom: 20px;
@@ -27,12 +27,19 @@ html, body {
 }
 
 #tooltip {
-    background: #333;
-    color: #bbb;
-    padding: 5px;
-    transition: .1s ease;
+  fill: #635F5D;
+  font-size: 1.2em;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  color: white;
+  padding: 5px 15px;
+  border: 1px #333 solid;
+  border-radius:  5px;
 
 }
+
+
 a {
     color: #54a172;
 }

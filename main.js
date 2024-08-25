@@ -30,7 +30,7 @@ const buildGraph = data => {
   
      const colorScale = d3.scaleSequential()
                          .domain(legendScale.domain())
-                         .interpolator(d3.interpolateBlues);
+                         .interpolator(d3.interpolatePurples);
 
     // tooltip
     const tooltip = d3.select('body')
@@ -49,13 +49,16 @@ const buildGraph = data => {
         .attr('data-fips', (d) => d.id)
         .style('fill', d => colorScale(userstories.find(fips => fips.fips === d.id ).story_point ))        
         .on('mouseover', (d) => {
-            let stories = userstories.find(fips => fips.fips === d.id && (fips.state === 'FL' || fips.state === 'CO'));
+            let stories = userstories.find(fips => fips.fips === d.id && (fips.state === 'CO' || fips.state === 'FL' || fips.state === 'VA'));
             tooltip.style('opacity', 0.8)
                     .attr('data-education', stories.story_point)
                     .style('z-index', 10)
-                    .html(`${stories.area_name}  - ${stories.story_point} story points`)
+                    .html(`${stories.area_name}<br> ${stories.story_point} points `)
                     .style('top', d3.event.pageY + 'px')
                     .style('left', (d3.event.pageX + 10) + 'px')
+                    .attr('width', 100)
+                    .attr('height', 500 + 'px')
+					
                 })
         .on('mouseout', () => tooltip.style('opacity', 0).style('z-index', '-1'))
         .attr('d', path);
